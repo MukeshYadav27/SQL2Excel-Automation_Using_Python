@@ -354,18 +354,7 @@ The application handles:
 
 # 👨‍💻 Author
 
-**Suresh Porandla**
-
-B.Tech – Information Technology
-
-Skills:
-
-- Python
-- SQL
-- Power BI
-- Machine Learning
-- Data Analytics
-
+** P.MUkESH **
 ---
 
 # ⭐ If you like this project
