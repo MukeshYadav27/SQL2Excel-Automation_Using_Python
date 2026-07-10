@@ -354,7 +354,7 @@ The application handles:
 
 # 👨‍💻 Author
 
-** P.MUkESH **
+** P.MUKESH **
 ---
 
 # ⭐ If you like this project
