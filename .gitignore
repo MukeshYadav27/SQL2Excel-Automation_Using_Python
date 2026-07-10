@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Reports
+reports/
+
+# Logs
+logs/
+
+# Jobs
+jobs/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Environment
+.env
+venv/
+.venv/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Excel Temporary
+~$*.xlsx
+
+# Settings
+settings.json

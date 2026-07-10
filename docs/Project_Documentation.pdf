@@ -1,0 +1,79 @@
+Employee Report Automation System - Project Documentation
+Project Overview
+This project automates SQL Server report generation using Python. Users create automation jobs that execute SQL queries at scheduled times, generate Excel reports, and notify the user when reports are created.
+
+Objectives
+•	Automate SQL report generation.
+•	Connect Python with SQL Server (SSMS).
+•	Generate formatted Excel reports.
+•	Schedule reports using Windows Task Scheduler.
+•	Reduce manual reporting effort.
+Technologies Used
+•	Python
+•	SQL Server (SSMS)
+•	pyodbc
+•	pandas
+•	openpyxl
+•	Windows Task Scheduler
+•	JSON
+•	plyer
+•	logging
+Project Structure
+•	src/: Python source code
+•	jobs/: Automation job JSON files
+•	reports/: Generated Excel reports
+•	logs/: Execution logs
+•	screenshots/: README images
+•	sql/: Database scripts
+•	docs/: Documentation
+Module Description
+•	config.py - Stores SQL Server configuration and project paths.
+•	database.py - Creates SQL Server connection.
+•	database_explorer.py - Lists tables, views, procedures and functions.
+•	query_manager.py - Shows suggested queries and validates user input.
+•	query_executor.py - Executes SELECT queries and returns a DataFrame.
+•	report_generator.py - Creates formatted Excel reports.
+•	settings_manager.py - Saves and loads automation jobs.
+•	scheduler.py - Creates Windows Task Scheduler tasks.
+•	auto_run.py - Runs automatically at scheduled time.
+•	main.py - Main menu for creating and managing automation jobs.
+Workflow
+•	Run main.py.
+•	Display database objects.
+•	Select or enter a SQL query.
+•	Enter Job Name, Report Name and Schedule.
+•	Save job as JSON.
+•	Create Windows Task Scheduler task.
+•	At scheduled time auto_run.py executes the query.
+•	Excel report is generated.
+•	Notification is displayed.
+•	Execution log is updated.
+How to Run
+•	Install Python.
+•	Install SQL Server and ODBC Driver 17.
+•	Create/Restore EmployeeDB1000 database.
+•	Run: pip install -r requirements.txt
+•	Update config.py with SQL Server details.
+•	Run: python src/main.py
+Common Errors
+•	SQL Server not running.
+•	Incorrect server name.
+•	Missing ODBC Driver.
+•	Incorrect database name.
+•	Windows Task Scheduler disabled.
+Future Enhancements
+•	Email reports
+•	PDF reports
+•	Dashboard
+•	REST API
+•	Web Interface
+•	Cloud database support
+Interview Highlights
+•	Python + SQL Server Integration
+•	Excel Automation
+•	Windows Task Scheduler
+•	JSON Configuration
+•	Logging and Notifications
+•	Modular Project Structure
+End-to-End Flow
+User -> main.py -> SQL Server -> Save Job -> Windows Task Scheduler -> auto_run.py -> Execute Query -> Generate Excel -> Notification -> Log File
